@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <title>Payslip GENERATOR</title>
+</head>
+
+<body>
+
+    <script>
+        function showData(str , id , file) {
+            XMLhttp = new XMLHttpRequest();
+            
+            XMLhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById(id).innerHTML = this.responseText;}                }              
+            //console.log(XMLhttp);
+                XMLhttp.open("GET", file + str + '.php', true);
+                XMLhttp.send();                
+                }
+    </script>
+
+    <header class="main_header">
+
+        <div class="wrapHeading">
+
+            <h1 class="main_heading"> The Payslip Generator</h1>
+            <h2 class="sub_heading"> Create your employees payslips easy and fast !</h2>
+
+        </div>
+
+
+    </header>
+
+    <div class="wrapEarth">
+        <img src="img/earth-661447_960_720.png" class="earth" alt="" srcset="">
+    </div>
+
+
+    <nav class="countNav">
+
+        <h3 class="selCou"> Please choose Your country: </h3>
+
+        <hr class="lineCou">
+
+        <div class="rowCou">
+
+            <div class="col1of3c" >
+
+                <img src="img/in.png" class="imgCou">
+                <li class="theC" value="1" onclick="showData(this.value, 'compAjax', 'count')"> India </li>
+
+            </div>
+            
+            <div class="col1of3c">
+
+                <img src="img/dk.png" class="imgCou">
+                <li class="theC" value="2" onclick="showData(this.value, 'compAjax', 'count')">Denmark</li>
+
+            </div>
+            
+            <div class="col1of3c">
+
+                <img src="img/pl.png" class="imgCou">
+                <li class="theC" value="3" onclick="showData(this.value, 'compAjax', 'count')"> Poland </li>
+
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+    </nav>
+
+
+    <main class="main_content">
+
+        <aside class="sideComp">
+
+            <p class="compT"> Companies: </p>
+            <hr class='line1'>
+
+            <!-- CONTAINER FOR AJAX RESPONSE-->
+            <div id="compAjax"></div>
+
+        </aside>
+
+        <section class="emp">
+
+            <p class="empT"> List of employees: </p>
+          
+            <!-- CONTAINER FOR AJAX RESPONSE-->
+            <div id="empAjax">
+
+                <table class="empTab">
+
+                    <tr class="empRow">
+                        <th class="empH"> Name: </th>
+                        <th class="empH"> Adress: </th>
+                        <th class="empH"> Age: </th>
+                        <th class="empH"> E-mail: </th>
+                        <th class="empH"> Mobile: </th>
+                    </tr>
+
+                </table>    
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="clear"></div>
+
+</body>
+
+</html>

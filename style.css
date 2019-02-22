@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(225, 230, 230);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+li{
+    list-style-type: none;}
+
+.earth {
+    width : 20%;
+    position: absolute;
+    right: 5%;
+} 
+
+.wrapEarth {
+    width : 50%;
+    margin: 40px auto;
+    position: relative;
+}
+
+
+.wrapComp {
+    margin : 20px auto;
+    width : 80%;}
+
+.compName {
+    text-align: right;
+    font-size: 24px;
+    padding: 5px;}
+
+.compName:hover{
+    cursor: pointer;
+    text-shadow: 2px 3px 10px;
+}    
+
+.empTab {
+    margin-top: 40px;
+    width : 100%;
+    padding-left : 20px;
+    font-size: 14px;
+    text-align: center;}
+
+.empH{
+    color: royalblue;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.empd {
+    width : 200px;
+    border: 0.1px solid royalblue;
+    padding:4px;}
+
+*, *::after , *::before {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;}
+
+.main_header {
+    width : 100%;
+    height : 160px;
+    position: relative;
+    box-shadow: 1px 2px 10px gray;}
+
+.wrapHeading {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);}
+
+.main_heading {
+    font-size: 35px;
+    margin-left: 35px;
+    color :gray;}
+
+.sub_heading {
+    color : royalblue;}
+
+.countNav {
+    width : 100%;
+    height : 150px;}
+
+.selCou {
+    letter-spacing: 3px;
+    color : royalblue;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 0px;}
+
+.rowCou {
+    max-width: 600px;
+    margin: 5px auto;}
+
+.col1of3c {
+    margin: 0 auto;
+    width : 170px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    position: relative;}
+
+.col1of3c:hover{
+    cursor: pointer;
+    padding: 3px;}
+
+.imgCou {
+    width : 20%;
+    height: 20px;
+    position: absolute;
+    padding: 5px;
+    left: 5%;
+    top: 25%;}
+
+
+.theC {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 450;
+    padding: 3px;}
+
+.theC:hover {
+    text-shadow: 2px 3px 5px;}
+
+.lineCou {
+    width : 170px;
+    height : 2px;
+    background-color: darkgray;
+    margin: 25px auto;
+    margin-bottom: 20px;}    
+
+.clear {
+    display: table;
+    clear: both;}
+
+.main_content {
+    margin: 120px auto;
+    width : 90%;
+    min-height: 200px;}
+
+.sideComp {
+    width : 25%;
+    min-height: 200px;
+    border: solid 0.3px royalblue;
+    float: left;
+    margin-left: 5%;}
+
+.emp {
+    width : 65%;
+    min-height: 200px;
+    float : left;
+    margin-right: 5%;}
+
+.empT , .compT {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    color : royalblue;} 
+
+.line1 {
+    width : 1050px;
+    margin: 0 auto;
+    margin-left : 110px;}
+
